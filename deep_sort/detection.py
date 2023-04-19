@@ -32,7 +32,7 @@ class Detection(object):
         self.tlwh = np.asarray(tlwh, dtype=float)
         self.confidence = float(confidence)
         self.class_name = class_name
-        self.feature = np.asarray(feature, dtype=numpy.float32)
+        self.feature = np.asarray(feature, dtype='float32')
 
     def get_class(self):
         return self.class_name
